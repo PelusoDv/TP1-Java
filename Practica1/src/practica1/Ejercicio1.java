@@ -1,26 +1,8 @@
 
 package practica1;
 
-public class Notas1 {
-    public float[] notas;
-    private int cantidad;
+public class Ejercicio1 extends Notas {
         
-    public float[] getNotas(){
-        return this.notas;
-    }
-    
-    public int getCant() {
-        return this.cantidad;
-    }
-    
-    public void setCant(int cant) {
-        this.cantidad = cant;
-    }
-    
-    public void setNotas(float[] n) {
-        this.notas = n;
-    }
-    
     public float getPromedio() {
         int i;
         float suma = 0;
