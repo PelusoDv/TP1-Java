@@ -1,13 +1,11 @@
 
 package practica1;
 
-import java.util.HashMap;
-
 public class Ejercicio4 {
-    String patente;
-    String nombreCompleto;
-    int tipoCarga;
-    int horaEgreso; 
+    private String patente;
+    private String nombreCompleto;
+    private int tipoCarga;
+    private int horaEgreso; 
     
     public Ejercicio4(String patente, String nombreCompleto, int tipoCarga, Integer horaEgreso) {
         this.patente = patente;
@@ -17,13 +15,10 @@ public class Ejercicio4 {
     }
 
     public void mostrarDatos() {
-        HashMap<Integer, String> Cargas = new HashMap<Integer, String>();
-        Cargas.put(1, "Madera");
-        Cargas.put(2, "Yerba");
-        Cargas.put(3, "Te");
+        String[] cargas = {"Madera","Yerba","Te"};
         System.out.println("Patente: " + patente);
         System.out.println("Chofer: " + nombreCompleto);
-        System.out.println("Tipo de carga: " + Cargas.get(tipoCarga));
+        System.out.println("Tipo de carga: " + cargas[tipoCarga]);
         System.out.println("Hora de egreso: " + horaEgreso);
         System.out.println("---------------------------");
     }

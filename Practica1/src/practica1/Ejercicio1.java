@@ -13,18 +13,16 @@ public class Ejercicio1 {
     } 
         
     public float getPromedio() {
-        int i;
         float suma = 0;
-        for (i=0;i<this.notas.length;i++) {
+        for (int i=0;i<this.notas.length;i++) {
             suma = suma + this.notas[i];
         }
         return suma/this.notas.length;
     }
     
     public float getMayor() {
-        int i;
         float mayor = 0;
-        for (i=0;i<this.notas.length;i++) {
+        for (int i=0;i<this.notas.length;i++) {
             if (this.notas[i]> mayor) {
                 mayor = this.notas[i];
             }
