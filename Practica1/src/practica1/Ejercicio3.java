@@ -27,10 +27,10 @@ public class Ejercicio3 {
     public void getMas1000() {
         for (int i=0; i<cant.size(); i++) {
             if ((precio.get(i) * cant.get(i))> 1000) {
-                System.out.println("El productos"+(i+1)+
-                " Precio= " + this.precio.get(i)+
-                " Cantidad= " + this.cant.get(i)+
-                "tiene un precio mayor a $1000");
+                System.out.println("El producto n"+(i+1)+
+                " (Precio = $" + this.precio.get(i)+
+                " Cantidad = " + this.cant.get(i)+
+                ") tiene un precio mayor a $1000");
             }
         }        
     }    

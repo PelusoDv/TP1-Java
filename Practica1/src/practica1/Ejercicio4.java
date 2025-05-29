@@ -7,10 +7,10 @@ public class Ejercicio4 {
     private int tipoCarga;
     private int horaEgreso; 
     
-    public Ejercicio4(String patente, String nombreCompleto, int tipoCarga, Integer horaEgreso) {
+    public Ejercicio4(String patente, String nombreCompleto, int tipoCarga, int horaEgreso) {
         this.patente = patente;
         this.nombreCompleto = nombreCompleto;
-        this.tipoCarga = tipoCarga;
+        this.tipoCarga = tipoCarga-1;
         this.horaEgreso = horaEgreso;
     }
 

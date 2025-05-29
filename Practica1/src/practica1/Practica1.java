@@ -99,6 +99,9 @@ public class Practica1 {
             do{
                 System.out.print("Tipo de carga ([1]Madera - [2]Yerba - [3]Te): ");
                 carga = entrada.nextInt(); 
+                if (carga < 1 || carga > 3){
+                    System.out.println("Utilice un numero valido");
+                }
             } while (carga < 1 || carga > 3);
 
             System.out.print("Hora de egreso: ");
@@ -146,7 +149,7 @@ public class Practica1 {
         for (i=0; i<pilotos.length; i++) {
             System.out.print("Ingrese el n# del #" + (i+1) +" piloto: ");
             int numpilot = entrada.nextInt();
-            System.out.print("Ingrese el tiempo del piloto: ");
+            System.out.print("Ingrese el tiempo en segundos del piloto: ");
             int tiempo = entrada.nextInt();
             pilotos[i] = new Ejercicio6(numpilot, tiempo);
         }
@@ -201,8 +204,7 @@ public class Practica1 {
                 mayorEdad = personas.get(i).getEdad();
             }          
         }
-        double porcentaje = 0;
-        porcentaje = (varonesEntre16y65 * 100.00) / varones;
+        double porcentaje = (varonesEntre16y65 * 100.00) / varones;
         System.out.println("=== Resultados del Censo ===");
         System.out.println("Total de personas censadas: " + totalPersonas);
         System.out.println("Cantidad de varones: " + varones);
